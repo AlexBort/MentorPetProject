@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = findViewById(R.id.drawer_layout)
         navigationView = findViewById(R.id.nav_view)
         navigationView.setupWithNavController(navController)
-        
+
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
 
 
