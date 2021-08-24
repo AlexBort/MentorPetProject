@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
 
-
         /**
          * Sets up a [NavigationView] for use with a [NavController]. This will call
          * [android.view.MenuItem.onNavDestinationSelected] when a menu item is selected.
