@@ -2,4 +2,9 @@
     <string name="app_name">MentorPetProject</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_title">profile SCREEN</string>
+    <string name="account">account</string>
+    <string name="notifications">notifications</string>
+    <string name="settings">SETTINGS</string>
+
 </resources>

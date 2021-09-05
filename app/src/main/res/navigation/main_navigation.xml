@@ -35,7 +35,7 @@
         android:id="@+id/accountFragment"
         android:label="fragment_account"
         android:name="com.android.academy.mentorpetproject.fragments_inside_stack.AccountFragment"
-        tools:layout="@layout/fragment_account" />
+         />
     <fragment
         android:id="@+id/notificationsFragment"
         android:name="com.android.academy.mentorpetproject.fragments_inside_stack.NotificationsFragment"
