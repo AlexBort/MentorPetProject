@@ -7,17 +7,41 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.android.academy.mentorpetproject.FirstFragment"
+        android:name="com.android.academy.mentorpetproject.top_destinations.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.android.academy.mentorpetproject.SecondFragment"
+        android:name="com.android.academy.mentorpetproject.top_destinations.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.android.academy.mentorpetproject.ProfileFragment"
+        android:name="com.android.academy.mentorpetproject.top_destinations.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/accountFragment"
+        android:label="fragment_account"
+        android:name="com.android.academy.mentorpetproject.fragments_inside_stack.AccountFragment"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.android.academy.mentorpetproject.fragments_inside_stack.NotificationsFragment"
+        android:label="NotificationsFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.android.academy.mentorpetproject.fragments_inside_stack.SettingsFragment"
+        android:label="SettingsFragment" />
 </navigation>
