@@ -50,9 +50,8 @@ class ProfileFragment : Fragment() {
         val navHostFragment =
             childFragmentManager.findFragmentById(R.id.profile_nav_container) as NavHostFragment
 
-        view?.findViewById<TextView>(R.id.account_textview)?.setOnClickListener {
-            navHostFragment.navController.navigate(R.id.accountFragment)
-        }
+        view?.findViewById<TextView>(R.id.account_textview)?.setOnClickListener{ it-> navHostFragment.navController.navigate(R.id.accountFragment) }
+
 
         view?.findViewById<TextView>(R.id.settings_textview)
             ?.setOnClickListener { navHostFragment.navController.navigate(R.id.settingsFragment) }
