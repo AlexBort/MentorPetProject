@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/accountFragment"
-        android:label="fragment_account"
+        android:label="AccountFragment"
         android:name="com.android.academy.mentorpetproject.fragments_inside_stack.AccountFragment"
          />
     <fragment

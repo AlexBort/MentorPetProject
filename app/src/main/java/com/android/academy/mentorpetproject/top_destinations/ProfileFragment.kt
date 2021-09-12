@@ -39,12 +39,11 @@ class ProfileFragment : Fragment() {
         view?.findViewById<TextView>(R.id.account_textview)?.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_accountFragment)
         )
-        view?.findViewById<TextView>(R.id.notifications_textview)?.setOnClickListener {
-            Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_notificationsFragment)
-        }
+        view?.findViewById<TextView>(R.id.notifications_textview)
+            ?.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_notificationsFragment))
 
         view?.findViewById<TextView>(R.id.settings_textview)
-            ?.setOnClickListener { Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_settingsFragment) }
+            ?.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_profileFragment_to_settingsFragment))
     }
 
     private fun displayMasterDetailLayout(view: View?) {
@@ -58,7 +57,7 @@ class ProfileFragment : Fragment() {
         view?.findViewById<TextView>(R.id.settings_textview)
             ?.setOnClickListener { navHostFragment.navController.navigate(R.id.settingsFragment) }
 
-        view?.findViewById<TextView>(R.id.notificationsFragment)
+        view?.findViewById<TextView>(R.id.notifications_textview)
             ?.setOnClickListener { navHostFragment.navController.navigate(R.id.notificationsFragment) }
     }
 }
