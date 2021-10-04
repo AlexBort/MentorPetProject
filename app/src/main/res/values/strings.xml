@@ -1,3 +1,6 @@
 <resources>
   <string name="app_name">MentorPetProject</string>
+    <string name="returns_witb_order_number">Order number:</string>
+  <string name="returns_witb_order_total">Order total:</string>
+  <string name="all_items_already_returned">You’ve previously selected to return all items from this order</string>
 </resources>

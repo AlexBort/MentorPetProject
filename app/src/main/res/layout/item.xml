@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_white_grey_border"
+    android:layout_margin="6dp">
+
+    <TextView
+        android:id="@+id/order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="top"
+        android:layout_margin="@dimen/margin_normal"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="#0091CD"
+        android:textSize="14sp"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.47sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="23 April 2021"
+        />
+    <TextView
+        android:id="@+id/order_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:lineSpacingExtra="1sp"
+        android:layout_margin="@dimen/margin_normal"
+        android:text="@string/returns_witb_order_number"
+        android:translationY="-0.47sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_date"
+        />
+
+    <TextView
+        android:id="@+id/order_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:lineSpacingExtra="1sp"
+        android:text="@string/returns_witb_order_total"
+        android:translationY="-0.47sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_number"
+        />
+
+
+    <TextView
+        android:id="@+id/order_total_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="top"
+        android:textSize="14sp"
+        android:lineSpacingExtra="1sp"
+        android:layout_marginStart="@dimen/margin_small"
+        tools:text="$22"
+        android:translationY="-0.47sp"
+        app:layout_constraintStart_toEndOf="@+id/order_total"
+        app:layout_constraintTop_toBottomOf="@+id/order_number"
+        />
+
+    <TextView
+        android:id="@+id/order_number_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="14sp"
+        android:lineSpacingExtra="1sp"
+        android:translationY="-0.47sp"
+        app:layout_constraintStart_toEndOf="@+id/order_number"
+        app:layout_constraintTop_toTopOf="@+id/order_number"
+        tools:text="$22"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/all_items_returned_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/order_total"
+        app:cardBackgroundColor="@color/cornflower_10"
+        android:layout_marginEnd="@dimen/margin_normal"
+        app:layout_constraintEnd_toStartOf="@+id/image_chevron"
+        app:cardCornerRadius="4dp"
+        app:strokeColor="@color/sky_blue"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="16dp"
+        app:strokeWidth="@dimen/dp_2"
+        app:layout_constraintTop_toBottomOf="@+id/order_total_value">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:textColor="@color/fiord"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/all_items_already_returned"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/image_chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_blue_chevron_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/margin_normal"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

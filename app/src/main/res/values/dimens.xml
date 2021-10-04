@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="return_corner_radius_big">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="big">190dp</dimen>
+    <dimen name="small">190dp</dimen>
+</resources>
